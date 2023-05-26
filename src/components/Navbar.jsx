@@ -30,23 +30,24 @@ const Navbar = () => {
                             const { href, icon, id } = link;
                             return (
                                 <li key={id}>
-                                    <a href={href} icon={icon} className='nav-icon' />
-
+                                    <a href={href} className='nav-icon' target="_blank" rel="noreferrer">
+                                        <i className={icon}></i>
+                                    </a>
                                 </li>
                             )
-                        })}
+                        })};
                         <li>
-                            <a href="https://www.twitter.com" target="_blank" className="nav-icon"
+                            <a href="https://www.twitter.com" target="_blank" rel="noreferrer" className="nav-icon"
                             ><i className="fab fa-facebook"></i
                             ></a>
                         </li>
                         <li>
-                            <a href="https://www.twitter.com" target="_blank" className="nav-icon"
+                            <a href="https://www.twitter.com" target="_blank" rel="noreferrer" className="nav-icon"
                             ><i className="fab fa-twitter"></i
                             ></a>
                         </li>
                         <li>
-                            <a href="https://www.twitter.com" target="_blank" className="nav-icon"
+                            <a href="https://www.twitter.com" target="_blank" rel="noreferrer" className="nav-icon"
                             ><i className="fab fa-squarespace"></i
                             ></a>
                         </li>
